@@ -1,0 +1,601 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+h1,h2,h4,h5 {
+  color: #32a8a0;
+  font-weight: 100;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.5;
+}
+h3 {
+  color: #fff;
+  font-weight: 200;
+}
+
+/* ==== NAVBAR ==== */
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 17%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid orange; */
+}
+
+.logo {
+  width: 60%;
+  object-fit: contain;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+  color: gray;
+  margin-left: 35px;
+  transition: .5s;
+  padding: 3px;
+  /* border: 2px solid green; */
+}
+
+.navbar a:hover, .navbar a.active {
+  color: #32a8a0;
+}
+
+
+/* ==== MAIN ==== */
+.leadsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  /* border: 5px solid black; */
+}
+
+#headerlogo {
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid red; */
+}
+
+#headerp {
+  padding-top: 20px;
+  color: #00B39B;
+  font-size: 32.9px;
+  font-family: "Work Sans", Arial, sans-serif;
+  /* border: 2px solid blue; */
+}
+
+.twoparagraphs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 270px 30px 220px;
+  color: #747474;
+  font-size: 16px;
+  font-family: "Helvetical Neue", Arial, Helvetica, sans-serif;
+  /* border: 2px solid red; */
+}
+.p1 {
+  /* border: 3px solid blue; */
+  margin-right: 15px;
+
+}
+.p2 {
+  /* border: 3px solid green; */
+  margin-left: 15px;
+}
+
+/* CARDS */
+.card-container {
+  /* border: 2px solid black; */
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+  /* align-items: center; */
+  /* flex-direction: row; */
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin: 0 12px;
+  margin-top: 3rem;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+}
+.img-resize {
+  width: 50px;
+  height: 40px;
+}
+
+/*  PATIENT CARD */
+.patient.card {
+  background: rgb(0, 204, 177);
+}
+.content {
+  /* border: 2px solid red; */
+  margin: 30px;
+}
+.content img {
+  margin-bottom: 0.5rem;
+  width: 25px;
+}
+.content p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.patient-selection {
+  /* border: 2px solid green; */
+  margin: 30px;
+  margin-top: 2rem;
+}
+.patient-countrylist {
+  /* border: 2px solid yellow; */
+  width: 180px;
+  border: hidden;
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  background-color: rgb(0, 204, 177);;
+}
+
+/* for doctors card */
+.doctors.card {
+  background-color: #3D83DF;
+}
+
+.doctors-selection {
+  /* border: 2px solid red; */
+  margin: 30px;
+  margin-top: 4rem;
+}
+.doctors-countrylist {
+  /* border: 2px solid black; */
+  text-decoration: underline;
+  background: #3D83DF;
+  color: #fff;
+  font-size: 1.3rem;
+  border: hidden;
+  /* width: 180px; */
+}
+
+
+/* Clinic card */
+.card.clinic {
+  background-color: #1B2734;
+}
+
+.clinic-selection {
+  /* border: 2px solid yellow; */
+  margin: 0px 30px 20px 30px ;
+}
+.clinic-countrylist1 {
+  text-decoration: underline;
+  background: #1B2734;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: hidden;
+}
+.clinic-countrylist2 {
+  text-decoration: underline;
+  background: #1B2734;
+  color: #fff;
+  font-size: 19.5px;
+  letter-spacing: 1px;
+  border: hidden;
+} 
+
+
+
+/* New container */
+.new-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 10rem;
+}
+
+/* .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.flex  {
+  /* border: 2px solid blue; */
+  width: 25%;
+  height: 9rem;
+  padding: 5rem;
+  margin-right: 10rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.flex p {
+  color: #00B39B;
+  font-size: 22.75px;
+  font-family: "Work Sans", Arial, sans-serif;
+  width: 15rem;
+  height: 7rem;
+  /* border: 2px solid red; */
+}
+.logo-text {
+  /* border: 2px solid green; */
+  width: 30%;
+  height: 9rem;
+  margin-top: 0rem;
+  margin-right: 9rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.logo-text img {
+  width: 17px;
+}
+
+
+.family {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 2rem;
+  width: 6rem;
+  height: 1.3rem;
+}
+.family img {
+  width: 20px;
+  height: 15px;
+}
+.family p {
+  font-size: 12px;
+  color: #00B39B;
+}
+.single {
+  display: inline-flexbox;
+  justify-content: stretch;
+  align-items: center;
+  width: 6rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.single img {
+  width: 1.5rem;
+  height: 2rem;
+  align-self: flex-end;
+}
+.single p {
+  font-size: 15px;
+  font-weight: 600;
+  height: 3rem;
+  margin-right: 5rem;
+  color: #00B39B;
+}
+
+.mixed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.mixed .size1 {
+  width: 5rem;
+  object-fit: contain;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+.mixed .size2 {
+  width: 5rem;
+  object-fit: contain;
+  height: 3rem;
+}
+.separate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+}
+
+.sizess .size3 {
+  width: 4rem;
+  height: 5rem;
+  object-fit: contain;
+  margin-left: 1rem;
+  /* align-content: flex-end; */
+}
+.sizess .size4 {
+  width: 5rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+
+/* Another section */
+.section {
+  background: #d0faf4;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 55px 0px 0px;
+  padding: 0px 0px 0px 50px;
+  /* margin-top: 100px; */
+  height: 43rem;
+  /* padding-left: 50px; */
+}
+.card-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.together {
+  display: block;
+  width: 400px;
+  height: 35rem;
+  margin-left: 10rem;
+  /* border: 2px solid red; */
+}
+.together h2 {
+  font-size: 35px;
+  margin: 20px 0px 10px;
+  padding: 0px 0px 50px 50px;
+}
+.together p {
+  font-size: 15px;
+  color: #747474;
+  margin: 0px 0px 10px;
+  padding: 20px 0px 50px 50px;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 8.5rem; */
+}
+.together img {
+  vertical-align: middle;
+  width: 25rem;
+  height: 20rem;
+}
+
+.hopital-card {
+  /* border: 2px solid blue; */
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 25px;
+ margin: 3rem;
+}
+.hopital-card .leader {
+  margin-top: 2rem;
+}
+.hopital-card .patients {
+  margin-top: 2rem;
+}
+.leader, .appointments, .patients, .active-doctors {
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 10px;
+  background: #fff;
+  height: 16rem;
+  border: #747474;
+  /* margin-bottom: 0.01rem; */
+}
+.leader,
+.appointments,
+.patients,.active-doctors
+ h4 {
+  font-size: 14px;
+  /* font-weight: 300; */
+  /* color: #00B39B; */
+}
+
+.leader,
+.appointments,
+.patients,
+.active-doctors p {
+  color: #333333;
+  font-size: 11.375px;
+  font-family: "Roboto",Arial, sans-serif;
+}
+
+.leader img {
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.appointments img {
+  height: 1.5rem;
+  margin-bottom: 2rem;
+  object-fit: contain;
+  
+}
+.patients img {
+  height: 1.5rem;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+.active-doctors img {
+  height: 1.5rem;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+
+
+/* Improve section */
+.improve {
+  background: #fff;
+  margin-top: 7rem;
+  /* height: 100vh; */
+}
+.improve h4 {
+  font-size: 2.1em;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  text-align: center;
+  width: 37%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.8rem;
+  /* border: 2px solid red; */
+}
+.improve p {
+  color: #747474;
+  text-align: center;
+  /* border: 2px solid blue; */
+  width: 37%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  /* flex-wrap: wrap; */
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  /* border: 2px solid grey; */
+}
+
+.warsaw,
+.Barcelona,
+.Munich,
+.Istanbul,
+.Rome,
+.Bologna,
+.Curitiba,
+.RioDeJaneiro,
+.Mexico  {
+  width: 18rem;
+  box-shadow: 0 10px 20px rgba(127, 127, 127, 2);
+}
+.warsaw,.Barcelona,.Munich,.Istanbul,.Rome,.Bologna,
+ .Curitiba,.RioDeJaneiro,.Mexico img {
+  border: 0px solid #fff;
+  overflow: hidden;
+  height: 18rem;
+  box-shadow: 0 2px 4px rgba(127, 127, 127, 2);
+  background: #fff;
+  transition:  3s;
+  /* border: none; */
+}
+.Mexico img {
+  /* object-fit: cover; */
+  height: 14rem;
+  width: 18rem;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 76%;
+}
+
+.see-openings {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.see-openings p {
+  color: #747474;
+  margin: 15px;
+}
+.see-openings button {
+  /* margin-top: 10rem; */
+  margin-right: 1rem;
+  border-radius: 5px;
+  border: hidden;
+  margin: 26px 20px 0px 0px;
+  padding: 1px 10px;
+  font-size: 12px;
+  background: #3D83DF;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  
+}
+
+
+.last {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 7rem;
+}
+.last h1 {
+  font-size: 2.1428571429em;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 100;
+  color: #333;
+}
+.last button {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Work Sans', Arial, sans-serif;
+  color: #fff;
+  background: #3D83DF;
+  border-radius: 5px;
+  border: hidden;
+  padding: 5px ;
+  margin-bottom: 6rem;
+}
+
+/* FOOTER */
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75rem;
+  
+}
+.footer a {
+  color: #337ab7;
+  text-decoration: none;
+  font-size: 13px;
+}
+.footer p {
+  width: 65rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  color: #747474;
+  font-size: 13px;
+}
+.footer span {
+  color: #747474;
+  font-size: 13px;
+}
+
+
+
